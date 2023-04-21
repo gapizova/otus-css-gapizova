@@ -22,11 +22,96 @@ body {
     line-height: 1.2;
 }
 
-h1 {
+.header {
+    text-align: center;
+}
+
+nav {
+    margin: 60px 0;
+}
+
+.header-menu-button {
+    background-color: white;
+    border: none;
+}
+
+.header-dropdown {
+    position: relative;
+    background-color: white;
+    z-index: 10;
+}
+
+.header-dropdown:hover .dropdown-content {
+    display: inline;
+}
+
+.dropdown-content {
+    position: absolute;
+    text-align: center;
+    left: 30%;
+    right: 30%;
+    display: none;
+}
+
+.list-menu {
+    padding: 0;
+    margin-top: 35px;
+}
+
+.list-menu li{
+    list-style: none;
+    display: inline;
+}
+
+.list-menu a {
+    text-decoration: none;
+    font-family: 'Butler', 'Times New Roman', Times, serif;
+    color: black;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    align-items: center;
+    text-align: center;
+}
+
+.wrapper {
+    max-width: 1065px;
+    margin: 0 auto;
+}
+
+.hero {
+    position: relative;
+    background-image: url(/images/inside-weather-Uxqlfigh6oE-unsplash\ 1.jpg);
+    height: 630px;
+}
+
+.hero-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+}
+
+.title-hero {
     font-family: 'PlayfairDisplay', 'Times New Roman', Times, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 86px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.description-hero {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
     line-height: 1.2;
     text-align: center;
 }
@@ -115,7 +200,8 @@ h5 {
     text-align: center;
  }
 
- ul {
+ .list-strengts {
+    list-style: none;
     font-family: 'Bitter', 'Times New Roman', Times, serif;
     font-style: normal;
     font-weight: 400;
