@@ -2,17 +2,17 @@
 @font-face {
     font-family: 'Bitter';
     src: local('Bitter'),
-        url('/font/Bitter/Bitter.woff2') format('woff2'),
-        url('/font/Bitter/Bitter.woff') format('woff'),
-        url('/font/Bitter/Bitter.svg') format('svg');
+        url('../font/Bitter/Bitter.woff2') format('woff2'),
+        url('../font/Bitter/Bitter.woff') format('woff'),
+        url('../font/Bitter/Bitter.svg') format('svg');
 }
 
 @font-face {
     font-family: 'PlayfairDisplay';
     src: local('PlayfairDisplay'),
-        url('/font/Playfair_Display/PlayfairDisplay.woff2') format('woff2'),
-        url('/font/Playfair_Display/PlayfairDisplay.woff') format('woff'),
-        url('/font/Playfair_Display/PlayfairDisplay.svg') format('svg');
+        url('../font/Playfair_Display/PlayfairDisplay.woff2') format('woff2'),
+        url('../font/Playfair_Display/PlayfairDisplay.woff') format('woff'),
+        url('../font/Playfair_Display/PlayfairDisplay.svg') format('svg');
 }
 
 html, body {
@@ -38,7 +38,7 @@ nav {
 
 .hero {
     position: relative;
-    background-image: url(/images/inside-weather-Uxqlfigh6oE-unsplash1.jpg);
+    background-image: url(../images/inside-weather-Uxqlfigh6oE-unsplash1.jpg);
     width: 73.958%;
     height: 630px;
     margin: 0 auto;
