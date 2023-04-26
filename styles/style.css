@@ -2,17 +2,17 @@
 @font-face {
     font-family: 'Bitter';
     src: local('Bitter'),
-        url('../font/Bitter/Bitter.woff2') format('woff2'),
-        url('../font/Bitter/Bitter.woff') format('woff'),
-        url('../font/Bitter/Bitter.svg') format('svg');
+        url('/font/Bitter/Bitter.woff2') format('woff2'),
+        url('/font/Bitter/Bitter.woff') format('woff'),
+        url('/font/Bitter/Bitter.svg') format('svg');
 }
 
 @font-face {
     font-family: 'PlayfairDisplay';
     src: local('PlayfairDisplay'),
-        url('../font/Playfair_Display/PlayfairDisplay.woff2') format('woff2'),
-        url('../font/Playfair_Display/PlayfairDisplay.woff') format('woff'),
-        url('../font/Playfair_Display/PlayfairDisplay.svg') format('svg');
+        url('/font/Playfair_Display/PlayfairDisplay.woff2') format('woff2'),
+        url('/font/Playfair_Display/PlayfairDisplay.woff') format('woff'),
+        url('/font/Playfair_Display/PlayfairDisplay.svg') format('svg');
 }
 
 html, body {
@@ -22,6 +22,21 @@ html, body {
     line-height: 1.2;
     margin: 0 auto;
     box-sizing: border-box;
+}
+
+h1, h4 {
+    font-family: 'PlayfairDisplay', 'Times New Roman', Times, serif;
+    font-style: normal;
+}
+
+h2, h3, .skills-katya, h5, .about, address, .description-hero {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-style: normal;    
+}
+
+.comment-katya, .comment-katya-2, .list-strengts {
+    font-family: 'Bitter', 'Times New Roman', Times, serif;
+    font-style: normal;
 }
 
 /* Кнопка навигации и главный заголовок начало */
@@ -56,8 +71,6 @@ nav {
 }
 
 h1 {
-    font-family: 'PlayfairDisplay', 'Times New Roman', Times, serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 5.375em;
     text-align: center;
@@ -67,8 +80,6 @@ h1 {
 }
 
 .description-hero {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 1.25em;
     text-align: center;
@@ -78,74 +89,55 @@ h1 {
 /* Кнопка навигации и главный заголовок конец */
 
 h2 {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.25em;
-    text-align: center;
+   text-align: center; 
+   font-weight: 500;
+   font-size: 1.25em;
 }
 
 h3 {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 1.25em;
 }
 
 h4 {
-    font-family: 'PlayfairDisplay', 'Times New Roman', Times, serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 5.375em;
 }
 
 .skills-katya {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 1.625em;
 }
 
 .comment-katya {
-    font-family: 'Bitter', 'Times New Roman', Times, serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 1.625em;
 }
 
 h5 {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 1em;
-    text-transform: uppercase;
 }
 
  .about {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 1em;
  }
 
- h5 {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1em;
+ .capitalize {
     text-transform: capitalize;
- }
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
 
  address {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 1em;
  }
 
  .comment-katya-2 {
-    font-family: 'Bitter', 'Times New Roman', Times, serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 2em;
     text-align: center;
@@ -153,8 +145,6 @@ h5 {
 
  .list-strengts {
     list-style: none;
-    font-family: 'Bitter', 'Times New Roman', Times, serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 2.125em;
  }
