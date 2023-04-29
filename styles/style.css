@@ -15,7 +15,7 @@
         url('/font/Playfair_Display/PlayfairDisplay.svg') format('svg');
 }
 
-html, body {
+header {
     width: 100%;
     height: 100%;
     max-width: 1440px;
@@ -41,7 +41,7 @@ h2, h3, .skills-katya, h5, .about, address, .description-hero {
 
 /* Кнопка навигации и главный заголовок начало */
 nav {
-    margin: 60px 0;
+    margin: 4.167% 0;
     background-color: white;
     text-align: center;
 }
@@ -55,7 +55,7 @@ nav {
     position: relative;
     background-image: url(../images/inside-weather-Uxqlfigh6oE-unsplash1.jpg);
     width: 73.958%;
-    height: 630px;
+    min-height: 630px;
     margin: 0 auto;
 }
 
@@ -74,17 +74,18 @@ h1 {
     font-weight: 500;
     font-size: 5.375em;
     text-align: center;
-    margin-top: 110px;
+    margin-top: 18.333%;
     margin-bottom: 0;
-    margin-left: 20px;
+    margin-left: 3.333%;
 }
 
 .description-hero {
     font-weight: 500;
     font-size: 1.25em;
     text-align: center;
-    margin-top: 14px;
-    margin-left: 21.5px;
+    margin-top: 2.333%;
+    margin-left: 3.583%;
+    margin-bottom: 18.333%;
 }
 /* Кнопка навигации и главный заголовок конец */
 
