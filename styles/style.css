@@ -15,10 +15,7 @@
         url('/font/Playfair_Display/PlayfairDisplay.svg') format('svg');
 }
 
-header {
-    width: 100%;
-    height: 100%;
-    max-width: 1440px;
+body {
     line-height: 1.2;
     margin: 0 auto;
     box-sizing: border-box;
@@ -40,23 +37,35 @@ h2, h3, .skills-katya, h5, .about, address, .description-hero {
 }
 
 /* Кнопка навигации и главный заголовок начало */
+.wrapper-nav {
+    width: 100%;
+    height: 135px;
+    margin: 0 auto;
+}
 nav {
-    margin: 4.167% 0;
     background-color: white;
-    text-align: center;
 }
 
 .header-menu-button {
     background-color: white;
     border: none;
+    margin-top: 5.5%;
+    margin-bottom: 5.5%;
+    margin-left: 48.819%;
+}
+
+.wrapper-header {
+    max-width: 1065px;
+    height: 630px;
+    margin: 0 auto;
+
 }
 
 .hero {
     position: relative;
     background-image: url(../images/inside-weather-Uxqlfigh6oE-unsplash1.jpg);
-    width: 73.958%;
-    min-height: 630px;
     margin: 0 auto;
+    height: 100%;
 }
 
 .hero-box {
@@ -74,9 +83,9 @@ h1 {
     font-weight: 500;
     font-size: 5.375em;
     text-align: center;
-    margin-top: 18.333%;
+    margin-top: 18.533%;
     margin-bottom: 0;
-    margin-left: 3.333%;
+    margin-left: 1.033%;
 }
 
 .description-hero {
@@ -84,10 +93,81 @@ h1 {
     font-size: 1.25em;
     text-align: center;
     margin-top: 2.333%;
-    margin-left: 3.583%;
+    margin-left: 1.033%;
     margin-bottom: 18.333%;
 }
 /* Кнопка навигации и главный заголовок конец */
+
+/*Секция Biography используем flex начало*/
+.wrapper-biography {
+    max-width: 1175px;
+    max-height: 840px;
+}
+
+.biography {
+    margin-left: 11.489%;
+    margin-top: 11.5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 1px;
+}
+
+.bio-pic {
+    order: 0;
+    height: 100%;
+    width: 47.064%;
+    margin: 0;
+    padding-left: 2%;
+    padding-top: 7.6%;
+}
+
+.header-biography {
+    transform: rotate(-90deg);
+    order: 1;
+    height: 10.952%;
+    width: 1.957%;
+    margin-top: 13.6%;
+    margin-left: 2.917%;
+}
+
+.katya-mills {
+    order: 2;
+    margin: 0;
+    margin-top: 4.5%;
+    margin-left: 12.711%;
+    width: 40.426%;
+    height: 27.381%;
+}
+
+.skills-katya {
+    order: 3;
+    margin: 0;
+    width: 40.426%;
+    height: 5%;
+    margin-top: 3.7%;
+    margin-left: 12.611%;
+}
+
+.sep-pic {
+    order: 4;
+    margin: 0;
+    margin-top: 5.422%;
+    margin-left: 12.611%;
+    width: 1.191%;
+    height: 0.476%;
+}
+
+blockquote {
+    order: 5;
+    width: 38.213%;
+    height: 14.762%;
+    margin: 0;
+    margin-top: 1.447%;
+    margin-left: 12.440%;
+}
+/*Секция Biography используем flex конец*/
 
 h2 {
    text-align: center; 
@@ -103,16 +183,18 @@ h3 {
 h4 {
     font-weight: 500;
     font-size: 5.375em;
+    margin: 0;
 }
 
 .skills-katya {
     font-weight: 500;
-    font-size: 1.625em;
+    font-size: 1.125em;
 }
 
 .comment-katya {
     font-weight: 400;
     font-size: 1.625em;
+    margin: 0;
 }
 
 h5 {
