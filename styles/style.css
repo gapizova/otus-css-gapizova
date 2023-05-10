@@ -17,21 +17,20 @@
 
 body {
     line-height: 1.2;
-    margin: 0 auto;
     box-sizing: border-box;
 }
 
-h1, h4 {
+h1, .subtitle-biography, .title-strengst {
     font-family: 'PlayfairDisplay', 'Times New Roman', Times, serif;
     font-style: normal;
 }
 
-h2, h3, .skills-katya, h5, .about, address, .description-hero {
+h2, .description-biography, h3, .about, address, .description-hero {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-style: normal;    
 }
 
-.comment-katya, .comment-katya-2, .list-strengts {
+.text-biography, .comment-katya-2, .list-strengts {
     font-family: 'Bitter', 'Times New Roman', Times, serif;
     font-style: normal;
 }
@@ -102,7 +101,7 @@ h1 {
 .wrapper-biography {
     max-width: 1175px;
     max-height: 840px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .biography {
@@ -110,101 +109,85 @@ h1 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: flex-start;
-    padding: 1px;
+    justify-content: flex-start;
+    align-content: space-between;
+    row-gap: 1rem;
 }
 
-.bio-pic {
+.image-biography {
     order: 0;
     flex-basis: 100%;
     width: 47.064%;
-    margin: 0;
-    margin-left: 0.5%;
     margin-top: 7.6%;
 }
 
-.header-biography {
+.title-biography {
     transform: rotate(-90deg);
     order: 1;
-    flex-basis: 10.952%;
     width: 1.957%;
     margin-top: 13.6%;
-    margin-left: 2.917%;
+    margin-left: -9.7%;
 }
 
-.katya-mills {
+.subtitle-biography {
     order: 2;
-    margin-top: 4.3%;
-    margin-left: 12.611%;
     line-height: 1.333;
     width: 40.426%;
-    flex-basis: 27.381%;
+    padding-top: 3%;
 }
 
-.skills-katya {
+.description-biography {
     order: 3;
     width: 40.426%;
-    flex-basis: 5%;
-    margin-top: 2.122%;
-    margin-left: 12.611%;
+    margin-top: 0.75%;
 }
 
-.sep-pic {
+.image-separator {
     order: 4;
-    margin-top: 3.678%;
-    margin-left: 12.611%;
+    margin-top: 2.6%;
     width: 1.191%;
-    flex-basis: 0.476%;
 }
 
-blockquote {
+.text-biography {
     order: 5;
     width: 38.213%;
-    flex-basis: 14.762%;
-    margin-top: 1.511%;
-    margin-left: 12.440%;
+    margin-top: 3.5%;
 }
 /*Секция Biography используем flex конец*/
 
 h2 {
-   text-align: center; 
-   font-weight: 500;
-   font-size: 1.25em;
-}
-
-h3 {
     font-weight: 700;
     font-size: 1.25em;
 }
 
-h4 {
+.subtitle-biography, .title-strengst {
     font-weight: 500;
     font-size: 5.375em;
     margin: 0;
 }
 
-.skills-katya {
+.description-biography {
     font-weight: 500;
     font-size: 1.125em;
 }
 
-.comment-katya {
+.text-biography {
     font-weight: 400;
     font-size: 1.625em;
     margin: 0;
 }
 
-h5 {
+h3 {
     font-weight: 700;
     font-size: 1em;
 }
 
- .about {
+.about {
     font-weight: 400;
     font-size: 1em;
  }
 
- .capitalize {
+.capitalize {
     text-transform: capitalize;
 }
 
