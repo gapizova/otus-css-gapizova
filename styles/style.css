@@ -15,48 +15,56 @@
         url('/font/Playfair_Display/PlayfairDisplay.svg') format('svg');
 }
 
-header {
-    width: 100%;
-    height: 100%;
-    max-width: 1440px;
+body {
     line-height: 1.2;
-    margin: 0 auto;
     box-sizing: border-box;
 }
 
-h1, h4 {
+h1, .subtitle-biography, .title-strengst {
     font-family: 'PlayfairDisplay', 'Times New Roman', Times, serif;
     font-style: normal;
 }
 
-h2, h3, .skills-katya, h5, .about, address, .description-hero {
+h2, .description-biography, h3, .about, address, .description-hero {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-style: normal;    
 }
 
-.comment-katya, .comment-katya-2, .list-strengts {
+.text-biography, .comment-katya-2, .list-strengts {
     font-family: 'Bitter', 'Times New Roman', Times, serif;
     font-style: normal;
 }
 
 /* Кнопка навигации и главный заголовок начало */
+.wrapper-nav {
+    width: 100%;
+    height: 135px;
+    margin: 0 auto;
+}
 nav {
-    margin: 4.167% 0;
     background-color: white;
-    text-align: center;
 }
 
 .header-menu-button {
     background-color: white;
     border: none;
+    margin-top: 5.5%;
+    margin-bottom: 5.5%;
+    margin-left: 48.819%;
+}
+
+.wrapper-header {
+    max-width: 1065px;
+    height: 630px;
+    margin: 0 auto;
+
 }
 
 .hero {
     position: relative;
     background-image: url(../images/inside-weather-Uxqlfigh6oE-unsplash1.jpg);
-    width: 73.958%;
-    min-height: 630px;
     margin: 0 auto;
+    height: 100%;
 }
 
 .hero-box {
@@ -74,9 +82,9 @@ h1 {
     font-weight: 500;
     font-size: 5.375em;
     text-align: center;
-    margin-top: 18.333%;
+    margin-top: 18.533%;
     margin-bottom: 0;
-    margin-left: 3.333%;
+    margin-left: 1.033%;
 }
 
 .description-hero {
@@ -84,48 +92,102 @@ h1 {
     font-size: 1.25em;
     text-align: center;
     margin-top: 2.333%;
-    margin-left: 3.583%;
+    margin-left: 1.033%;
     margin-bottom: 18.333%;
 }
 /* Кнопка навигации и главный заголовок конец */
 
-h2 {
-   text-align: center; 
-   font-weight: 500;
-   font-size: 1.25em;
+/*Секция Biography используем flex начало*/
+.wrapper-biography {
+    max-width: 1175px;
+    max-height: 840px;
+    margin: auto;
 }
 
-h3 {
+.biography {
+    margin-top: 11.5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+    row-gap: 1rem;
+}
+
+.image-biography {
+    order: 0;
+    flex-basis: 100%;
+    width: 47.064%;
+    margin-top: 7.6%;
+}
+
+.title-biography {
+    transform: rotate(-90deg);
+    order: 1;
+    width: 1.957%;
+    margin-top: 13.6%;
+    margin-left: -9.7%;
+}
+
+.subtitle-biography {
+    order: 2;
+    line-height: 1.333;
+    width: 40.426%;
+    padding-top: 3%;
+}
+
+.description-biography {
+    order: 3;
+    width: 40.426%;
+    margin-top: 0.75%;
+}
+
+.image-separator {
+    order: 4;
+    margin-top: 2.6%;
+    width: 1.191%;
+}
+
+.text-biography {
+    order: 5;
+    width: 38.213%;
+    margin-top: 3.5%;
+}
+/*Секция Biography используем flex конец*/
+
+h2 {
     font-weight: 700;
     font-size: 1.25em;
 }
 
-h4 {
+.subtitle-biography, .title-strengst {
     font-weight: 500;
     font-size: 5.375em;
+    margin: 0;
 }
 
-.skills-katya {
+.description-biography {
     font-weight: 500;
-    font-size: 1.625em;
+    font-size: 1.125em;
 }
 
-.comment-katya {
+.text-biography {
     font-weight: 400;
     font-size: 1.625em;
+    margin: 0;
 }
 
-h5 {
+h3 {
     font-weight: 700;
     font-size: 1em;
 }
 
- .about {
+.about {
     font-weight: 400;
     font-size: 1em;
  }
 
- .capitalize {
+.capitalize {
     text-transform: capitalize;
 }
 
