@@ -279,18 +279,18 @@ h3 {
     text-transform: uppercase;
 }
 
- address {
+.link-testimonials {
     font-weight: 400;
     font-size: 1em;
  }
 
- .comment-katya-2 {
+.text-testimonials {
     font-weight: 400;
     font-size: 2em;
     text-align: center;
  }
 
- .list-strengts {
+.list-strengts {
     list-style: none;
     font-weight: 400;
     font-size: 2.125em;
