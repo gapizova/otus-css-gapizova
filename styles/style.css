@@ -190,8 +190,8 @@ h1 {
 }
 
 .testimonials {
-    margin-top: 17.917%;
-    margin-left: 11.03%;
+    margin-top: 14.917%;
+    margin-left: 11.2%;
 }
 
 .grid-column-1 {
@@ -214,6 +214,11 @@ h1 {
 .rotate {
     transform: rotate(-90deg);
     place-self: center center;
+}
+
+.link-testimonials {
+    text-decoration: none;
+    color: black;
 }
 
 .link-testimonials, .capitalize {
