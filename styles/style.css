@@ -25,12 +25,12 @@ h1, .subtitle-biography, .title-strengst {
     font-style: normal;
 }
 
-h2, .description-biography, .list-skills, h3, .list-designer-description, address, .description-hero {
+h2, .description-biography, .list-skills, h3, .list-designer-description, .link-testimonials, .description-hero {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-style: normal;    
 }
 
-.text-biography, .comment-katya-2, .list-strengts {
+.text-biography, .text-testimonials, .list-strengts {
     font-family: 'Bitter', 'Times New Roman', Times, serif;
     font-style: normal;
 }
