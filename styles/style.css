@@ -60,9 +60,12 @@
 }
 
 body {
+    max-width: 100vw;
     min-height: 100vh;
+    background-color: #ffffff;
     line-height: 1.2;
     box-sizing: border-box;
+    margin: 0 auto;
 }
 
 h1, .subtitle-biography, .title-strengst {
@@ -78,37 +81,72 @@ h2, .description-biography, .list-skills, h3, .list-designer-description, .link-
     font-family: 'Bitter', 'Times New Roman', Times, serif;
 }
 
+/* Десктопная версия. Устройства более 1200px */
 /* Кнопка навигации и главный заголовок начало */
 .wrapper-nav {
-    width: 100%;
-    height: 135px;
+    max-width: 1440px;
+    max-height: 135px;
     margin: 0 auto;
+    background-color: #ffffff;
 }
-nav {
-    background-color: white;
+
+.header-dropdown {
+    position: relative;
+    display: block;
 }
 
 .header-menu-button {
-    background-color: white;
+    background-color: #ffffff;
     border: none;
+    padding: 1rem;
     margin-top: 5.5%;
     margin-bottom: 5.5%;
     margin-left: 48.819%;
 }
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #ffffff;
+    border: .1rem solid #000000;
+    top: 75%;
+    left: 38%;
+}
+
+.item-menu {
+    display: block;
+    font-family: 'Butler', 'Times New Roman', Times, serif;
+    font-size: 2.75rem;
+    font-weight: 400;
+    color: #000000;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.item-menu:hover {
+    background-color: #808080;
+}
+
+.header-dropdown:hover .dropdown-content {
+    display: block;
+}
+
 .wrapper-header {
     max-width: 1065px;
     height: 630px;
+    min-height: 100%;
+    max-height: 100vh;
     margin: 0 auto;
-
 }
 
 .hero {
     position: relative;
-    background-color: beige;
-    background-image: url(../images/bg-header.jpg);
-    margin: 0 auto;
     height: 100%;
+    background-color: #ffe4c4;
+    background-image: url(../images/bg-header/bg-header@1x.jpg);
+    background-size: cover;
+    margin: 0 auto;
 }
 
 .hero-box {
@@ -116,7 +154,7 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
+    background-color: #ffffff;
     width: 56.338%;
     height: 57.143%;
     text-align: center;
@@ -124,7 +162,7 @@ nav {
 
 h1 {
     font-weight: 500;
-    font-size: 5.375em;
+    font-size: 5.375rem;
     text-align: center;
     margin-top: 18.533%;
     margin-bottom: 0;
@@ -133,7 +171,7 @@ h1 {
 
 .description-hero {
     font-weight: 500;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     text-align: center;
     margin-top: 2.333%;
     margin-left: 1.033%;
@@ -145,7 +183,7 @@ h1 {
 .wrapper-biography {
     max-width: 1175px;
     max-height: 840px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .biography {
@@ -163,6 +201,7 @@ h1 {
     flex-basis: 100%;
     width: 47.064%;
     margin-top: 7.6%;
+    object-fit: cover;
 }
 
 .title-biography {
@@ -215,7 +254,7 @@ h1 {
     display: block;
     width: 14px;
     height: 4px;
-    background-color: black;
+    background-color: #000000;
 }
 
 .text-biography {
@@ -260,7 +299,7 @@ h1 {
 
 .link-testimonials {
     text-decoration: none;
-    color: black;
+    color: #000000;
 }
 
 .link-testimonials, .capitalize {
@@ -309,6 +348,7 @@ h1 {
 .image-testimonials-2 {
     grid-row: 2 / 3;
     justify-self: center;
+    object-fit: cover;
     margin-top: -2.5%;
     margin-left: 10%;
 }
@@ -316,29 +356,29 @@ h1 {
 
 h2 {
     font-weight: 700;
-    font-size: 1.25em;
+    font-size: 1.25rem;
 }
 
 .subtitle-biography, .title-strengst {
     font-weight: 500;
-    font-size: 5.375em;
+    font-size: 5.375rem;
     margin: 0;
 }
 
 .description-biography, .list-skills {
     font-weight: 500;
-    font-size: 1.125em;
+    font-size: 1.125rem;
 }
 
 .text-biography {
     font-weight: 400;
-    font-size: 1.625em;
+    font-size: 1.625rem;
     margin: 0;
 }
 
 h3 {
     font-weight: 700;
-    font-size: 1em;
+    font-size: 1rem;
 }
 /*Секция Designers начало*/
 .wrapper-designers {
@@ -393,7 +433,7 @@ h3 {
 
 .list-designer-description {
     font-weight: 400;
-    font-size: 1em;
+    font-size: 1rem;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -426,12 +466,12 @@ h3 {
 
 .link-testimonials {
     font-weight: 400;
-    font-size: 1em;
+    font-size: 1rem;
  }
 
 .text-testimonials {
     font-weight: 400;
-    font-size: 2em;
+    font-size: 2rem;
     text-align: center;
  }
 /* Секция Strong points с учетом поддержки разных браузеров начало */
@@ -470,7 +510,7 @@ h3 {
 .list-strengts {
     list-style: none;
     font-weight: 400;
-    font-size: 2.125em;
+    font-size: 2.125rem;
     padding-left: 5rem;
  }
 
@@ -484,3 +524,110 @@ h3 {
     }
  }
 /* Секция Strong points с учетом поддержки разных браузеров конец */
+
+/* xs-размер (<=575px) CSS для ширины до 575px (включительно)*/
+@media (max-width: 575px) {
+    .hero {
+        position: static;
+        display: flex;
+        flex-direction: column-reverse;
+        background-image: url(../images/bg-header/bg-header@0.5x.jpg);
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+    
+    .hero-box {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        transform: none;
+        width: 100%;
+        height: 50%;
+    }
+
+    h1 {
+        font-weight: 400;
+        font-size: 4.375rem;
+        line-height: 1.33;
+    }
+    
+    .description-hero {
+        font-size: 1.125rem;
+    }
+
+    .biography {
+        padding: 1rem;
+        margin: 0;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .image-biography {
+        order: 5;
+        width: 50%;
+        height: min-content;
+        object-fit: contain;
+        align-self: flex-start;
+    }
+    
+    .title-biography {
+        display: block;
+        transform: none;
+        order: 1;
+        width: 47%;
+        font-size: 1.125rem;
+        margin: 0;
+        text-align: end;
+    }
+    
+    .subtitle-biography {
+        position: relative;
+        order: 4;
+        font-weight: 400;
+        font-size: 4rem;
+        line-height: 1.286;
+        width: 100%;
+    }
+
+    .subtitle-biography::before {
+        content: ' -';
+    }
+    
+    .description-biography {
+        order: 0;
+        width: 47%;
+    }
+    
+    .list-skills {
+        order: 2;
+        width: 47%;
+    }
+
+    .skill {    
+        display: block;
+    }
+    
+    .skill::after {
+        content: none;
+    }
+
+    .skill::before {
+        content: '- ';
+    }
+    
+    .skill:last-child::after {
+        content: none;
+    }
+    
+    .text-biography::before {
+        content: none;
+    }
+    
+    .text-biography {
+        position: static;
+        order: 3;
+        width: 100%;
+        font-weight: 300;
+        font-size: 1.875rem;
+    }
+  }
