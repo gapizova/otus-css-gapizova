@@ -1,40 +1,81 @@
 /* Загрузка шрифтов */
 @font-face {
     font-family: 'Bitter';
-    src: local('Bitter'),
-        url('/font/Bitter/Bitter.woff2') format('woff2'),
-        url('/font/Bitter/Bitter.woff') format('woff'),
-        url('/font/Bitter/Bitter.svg') format('svg');
+    src: 
+        local('Bitter-Light'),
+        local('Bitter_Light'),
+        url('../font/Bitter/Bitter-Light.woff2') format('woff2'),
+        url('../font/Bitter/Bitter-Light.woff') format('woff'),
+        url('../font/Bitter/Bitter-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bitter';
+    src: 
+        local('Bitter-Regular'),
+        local('Bitter_Regular'),
+        url('../font/Bitter/Bitter-Regular.woff2') format('woff2'),
+        url('../font/Bitter/Bitter-Regular.woff') format('woff'),
+        url('../font/Bitter/Bitter-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
     font-family: 'PlayfairDisplay';
-    src: local('PlayfairDisplay'),
-        url('/font/Playfair_Display/PlayfairDisplay.woff2') format('woff2'),
-        url('/font/Playfair_Display/PlayfairDisplay.woff') format('woff'),
-        url('/font/Playfair_Display/PlayfairDisplay.svg') format('svg');
+    src: 
+        local('PlayfairDisplay-Regular'),
+        local('PlayfairDisplay_Regular'),
+        url('../font/PlayFair_Display/PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('../font/PlayFair_Display/PlayfairDisplay-Regular.woff') format('woff'),
+        url('../font/PlayFair_Display/PlayfairDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: 
+        local('PlayfairDisplay-Medium'),
+        local('PlayfairDisplay_Medium'),
+        url('../font/PlayFair_Display/PlayfairDisplay-Medium.woff2') format('woff2'),
+        url('../font/PlayFair_Display/PlayfairDisplay-Medium.woff') format('woff'),
+        url('../font/PlayFair_Display/PlayfairDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Butler';
+    src: 
+        local('Butler-Medium'),
+        local('Butler_Medium'),
+        url('../font/Butler/Butler_Medium.woff2') format('woff2'),
+        url('../font/Butler/Butler_Medium.woff') format('woff'),
+        url('../font/Butler/Butler_Medium.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
 
 body {
+    min-height: 100vh;
     line-height: 1.2;
     box-sizing: border-box;
 }
 
 h1, .subtitle-biography, .title-strengst {
     font-family: 'PlayfairDisplay', 'Times New Roman', Times, serif;
-    font-style: normal;
 }
 
 
 h2, .description-biography, .list-skills, h3, .list-designer-description, .link-testimonials, .description-hero {
-
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-style: normal;    
 }
 
 .text-biography, .text-testimonials, .list-strengts {
     font-family: 'Bitter', 'Times New Roman', Times, serif;
-    font-style: normal;
 }
 
 /* Кнопка навигации и главный заголовок начало */
@@ -64,6 +105,7 @@ nav {
 
 .hero {
     position: relative;
+    background-color: beige;
     background-image: url(../images/bg-header.jpg);
     margin: 0 auto;
     height: 100%;
@@ -392,9 +434,53 @@ h3 {
     font-size: 2em;
     text-align: center;
  }
+/* Секция Strong points с учетом поддержки разных браузеров начало */
+.wrapper-strong-points {
+    max-width: 1440px;
+    margin: 9% auto 0 auto;
+    overflow-x: auto;
+}
+
+.strong-points {
+    display: flex;
+    height: 47%;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-strong-points {
+    display: inline-block;
+    width: 13.5%;
+    margin-top: 2%;
+    padding-left: 2rem;
+    transform: rotate(-90deg) translate(0%, 1150%);
+}
+
+.image-strong-points {
+    object-fit: cover;
+}
+
+.container-list {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+}
 
 .list-strengts {
     list-style: none;
     font-weight: 400;
     font-size: 2.125em;
+    padding-left: 5rem;
  }
+
+ @supports (display: grid){
+    .strong-points {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(350px, 1fr)) 26.2% minmax(350px, 1fr);
+        grid-auto-columns: 350px;
+        column-gap: 30px;
+        align-items: center;
+    }
+ }
+/* Секция Strong points с учетом поддержки разных браузеров конец */
