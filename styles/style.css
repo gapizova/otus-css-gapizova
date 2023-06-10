@@ -526,7 +526,8 @@ h3 {
 /* Секция Strong points с учетом поддержки разных браузеров конец */
 
 /* xs-размер (<=575px) CSS для ширины до 575px (включительно)*/
-@media (max-width: 575px) {
+@media screen and (max-width: 575px) {
+    /* Секция загоовка и меню */
     .hero {
         position: static;
         display: flex;
@@ -555,6 +556,7 @@ h3 {
         font-size: 1.125rem;
     }
 
+    /* Секция Биография */
     .biography {
         padding: 1rem;
         margin: 0;
@@ -629,5 +631,18 @@ h3 {
         width: 100%;
         font-weight: 300;
         font-size: 1.875rem;
+    }
+
+    /* Секция дизайнеры */
+    .title-designers {
+        display: block;
+        transform: none;
+        grid-column: 1;
+    }
+
+    .image-designer-stretched {
+        grid-row: span 1;
+        grid-column: span 1;
+        object-fit: contain;
     }
   }
