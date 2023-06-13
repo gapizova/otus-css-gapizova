@@ -81,6 +81,52 @@ h2, .description-biography, .list-skills, h3, .list-designer-description, .link-
     font-family: 'Bitter', 'Times New Roman', Times, serif;
 }
 
+h2 {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.subtitle-biography, .title-strengst {
+    font-weight: 500;
+    font-size: 5.375rem;
+    margin: 0;
+}
+
+.description-biography, .list-skills {
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+.text-biography {
+    font-weight: 400;
+    font-size: 1.625rem;
+    margin: 0;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.link-testimonials {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.text-testimonials {
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+}
+
 /* Десктопная версия. Устройства более 1200px */
 /* Кнопка навигации и главный заголовок начало */
 .wrapper-nav {
@@ -99,9 +145,9 @@ h2, .description-biography, .list-skills, h3, .list-designer-description, .link-
     background-color: #ffffff;
     border: none;
     padding: 1rem;
-    margin-top: 5.5%;
-    margin-bottom: 5.5%;
-    margin-left: 48.819%;
+    margin-top: 6.5%;
+    margin-bottom: 6.5%;
+    margin-left: 46.819%;
 }
 
 .dropdown-content {
@@ -146,7 +192,7 @@ h2, .description-biography, .list-skills, h3, .list-designer-description, .link-
     background-color: #ffe4c4;
     background-image: url(../images/bg-header/bg-header@1x.jpg);
     background-size: cover;
-    margin: 0 auto;
+    margin: 2% auto;
 }
 
 .hero-box {
@@ -215,7 +261,7 @@ h1 {
 .subtitle-biography {
     order: 2;
     line-height: 1.333;
-    width: 40.426%;
+    width: 20.426%;
     padding-top: 3%;
 }
 
@@ -260,9 +306,87 @@ h1 {
 .text-biography {
     position: relative;
     order: 5;
-    width: 38.213%;
+    width: 31.213%;
 }
 /*Секция Biography используем flex конец*/
+
+/*Секция Designers начало*/
+.wrapper-designers {
+    max-width: 1337px;
+    margin: 12% 15%;
+    padding: 1rem 1rem;
+    overflow-x: auto;
+}
+
+.designers {
+    display: flex;
+    column-gap: 25px;
+    align-items: flex-end;
+
+}
+
+.title-designers {
+    display: inline-block;
+    position: absolute;
+    left: 65.5%;
+    transform: rotate(-90deg) translate(600%, 0);
+}
+
+.container-designer {
+    flex-shrink: 0;
+    width: 320px;
+    height: 520px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 24px;
+}
+
+.image-designer {
+    object-fit: cover;
+}
+
+.image-designer-stretched {
+    width: 635.48px;
+    height: 619px;
+    object-fit: cover;
+}
+
+.image-designer-stretched > .designer-description {
+    align-self: center;
+    margin-left: 36.5%;
+}
+
+.subtitle-designers {
+    margin: 0;
+    padding: 0;
+}
+
+.list-designer-description {
+    font-weight: 400;
+    font-size: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+ }
+
+.item-list-designer {
+    display: inline-block;
+}
+
+.item-list-designer::after {
+    content: ' / ';
+}
+
+.item-list-designer:last-child::after {
+    content: '';
+}
+
+.item-list-designer:first-child::after {
+    content: '';
+}
+/*Секция Designers конец*/
 
 /*Секция Testimonials используем grid начало*/
 .wrapper-testimonials {
@@ -271,8 +395,7 @@ h1 {
 }
 
 .testimonials {
-    margin-top: 14.917%;
-    margin-left: 11.2%;
+    margin: -6.5% 18%;
 }
 
 .grid-column-1 {
@@ -354,130 +477,10 @@ h1 {
 }
 /*Секция Testimonials используем grid конец*/
 
-h2 {
-    font-weight: 700;
-    font-size: 1.25rem;
-}
-
-.subtitle-biography, .title-strengst {
-    font-weight: 500;
-    font-size: 5.375rem;
-    margin: 0;
-}
-
-.description-biography, .list-skills {
-    font-weight: 500;
-    font-size: 1.125rem;
-}
-
-.text-biography {
-    font-weight: 400;
-    font-size: 1.625rem;
-    margin: 0;
-}
-
-h3 {
-    font-weight: 700;
-    font-size: 1rem;
-}
-/*Секция Designers начало*/
-.wrapper-designers {
-    max-width: 1337px;
-    margin: 16.5% auto 0 auto;
-    overflow-x: auto;
-}
-
-.designers {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(320px, 1fr));
-    grid-template-rows: 15% 85%;
-    grid-auto-columns: 320px;
-    column-gap: 25px;
-}
-
-.title-designers {
-    display: inline-block;
-    transform: rotate(-90deg) translate(43.5%, 0);
-    grid-row: 1;
-    grid-column: 3 / 5;
-}
-
-.container-designer {
-    display: flex;
-    row-gap: 23.5px;
-    flex-direction: column;
-    grid-row: 2 / 3;
-    grid-column: span 1;
-}
-
-.image-designer {
-    object-fit: contain;
-    width: fit-content;
-}
-
-.image-designer-stretched {
-    grid-row: 1 / 3;
-    grid-column: span 2;
-    margin-left: 2%;
-}
-
-.image-designer-stretched > .designer-description {
-    align-self: center;
-    margin-left: 36.5%;
-}
-
-.subtitle-designers {
-    margin: 0;
-    padding: 0;
-}
-
-.list-designer-description {
-    font-weight: 400;
-    font-size: 1rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
- }
-
-.item-list-designer {
-    display: inline-block;
-}
-
-.item-list-designer::after {
-    content: ' / ';
-}
-
-.item-list-designer:last-child::after {
-    content: '';
-}
-
-.item-list-designer:first-child::after {
-    content: '';
-}
-/*Секция Designers конец*/
-
-.capitalize {
-    text-transform: capitalize;
-}
-
-.uppercase {
-    text-transform: uppercase;
-}
-
-.link-testimonials {
-    font-weight: 400;
-    font-size: 1rem;
- }
-
-.text-testimonials {
-    font-weight: 400;
-    font-size: 2rem;
-    text-align: center;
- }
 /* Секция Strong points с учетом поддержки разных браузеров начало */
 .wrapper-strong-points {
     max-width: 1440px;
-    margin: 9% auto 0 auto;
+    margin: 15.5% auto 0 auto;
     overflow-x: auto;
 }
 
@@ -512,7 +515,7 @@ h3 {
     font-weight: 400;
     font-size: 2.125rem;
     padding-left: 5rem;
- }
+}
 
  @supports (display: grid){
     .strong-points {
@@ -522,7 +525,7 @@ h3 {
         column-gap: 30px;
         align-items: center;
     }
- }
+}
 /* Секция Strong points с учетом поддержки разных браузеров конец */
 
 /* xs-размер (<=575px) CSS для ширины до 575px (включительно)*/
@@ -566,8 +569,7 @@ h3 {
     
     .image-biography {
         order: 5;
-        width: 50%;
-        height: min-content;
+        height: 50%;
         object-fit: contain;
         align-self: flex-start;
     }
@@ -637,12 +639,10 @@ h3 {
     .title-designers {
         display: block;
         transform: none;
-        grid-column: 1;
     }
 
     .image-designer-stretched {
-        grid-row: span 1;
-        grid-column: span 1;
-        object-fit: contain;
+        width: 320px;
+        height: 520px;
     }
   }
