@@ -1,0 +1,26 @@
+{
+  "name": "html_css",
+  "version": "1.0.0",
+  "description": "Project for HTML/CSS course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gapizova/otus-css-gapizova.git"
+  },
+  "author": "Gapizova Ekaterina",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gapizova/otus-css-gapizova/issues"
+  },
+  "homepage": "https://github.com/gapizova/otus-css-gapizova#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "prettier": "^2.8.8"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
