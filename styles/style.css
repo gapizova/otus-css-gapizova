@@ -80,20 +80,76 @@ h2, .description-biography, .list-skills, h3, .list-designer-description, .link-
 
 /* Кнопка навигации и главный заголовок начало */
 .wrapper-nav {
-    width: 100%;
-    height: 135px;
+    max-width: 1065px;
+    max-height: 135px;
     margin: 0 auto;
+    background-color: #ffffff;
 }
+
 nav {
-    background-color: white;
+    background-color: #ffffff;
+}
+
+.header-dropdown {
+    position: relative;
+    display: block;
 }
 
 .header-menu-button {
-    background-color: white;
+    background-color: #ffffff;
     border: none;
-    margin-top: 5.5%;
-    margin-bottom: 5.5%;
-    margin-left: 48.819%;
+    padding: 1rem;
+    margin: 5.5% 48%;
+}
+
+.item-menu {
+    display: inline-block;
+    list-style: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #ffffff;
+    width: 96.5%;
+    border: .1rem solid transparent;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    top: 75%;
+    left: 0;
+
+    &::before {
+        content: '';
+        position: absolute;
+        background: inherit;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: -20px;
+        box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+        filter: blur(10px);
+    }
+}
+
+.item-menu-link {
+    display: block;
+    font-family: 'Butler', 'Times New Roman', Times, serif;
+    font-size: 2.75rem;
+    font-weight: 400;
+    color: #000000;
+    padding: .9rem;
+    text-decoration: none;
+}
+
+.item-menu-link:hover {
+    background-color: #a52a2a10;
+}
+
+.header-dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .wrapper-header {
