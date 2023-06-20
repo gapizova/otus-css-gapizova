@@ -63,6 +63,7 @@ body {
     min-height: 100vh;
     line-height: 1.2;
     box-sizing: border-box;
+    background-color: #ffffff;
 }
 
 h1, .subtitle-biography, .title-strengst {
@@ -83,11 +84,6 @@ h2, .description-biography, .list-skills, h3, .list-designer-description, .link-
     max-width: 1065px;
     max-height: 135px;
     margin: 0 auto;
-    background-color: #ffffff;
-}
-
-nav {
-    background-color: #ffffff;
 }
 
 .header-dropdown {
@@ -152,7 +148,7 @@ nav {
 
 .hero {
     position: relative;
-    background-color: beige;
+    background-color: #f5f5dc;
     background-image: url(../images/bg-header.jpg);
     margin: 0 auto;
     height: 100%;
@@ -163,7 +159,7 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
+    background-color: #ffffff;
     width: 56.338%;
     height: 57.143%;
     text-align: center;
@@ -262,7 +258,7 @@ h1 {
     display: block;
     width: 14px;
     height: 4px;
-    background-color: black;
+    background-color: #000000;
 }
 
 .text-biography {
@@ -307,7 +303,7 @@ h1 {
 
 .link-testimonials {
     text-decoration: none;
-    color: black;
+    color: #000000;
 }
 
 .link-testimonials, .capitalize {
