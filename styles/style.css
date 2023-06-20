@@ -185,10 +185,10 @@ h1 {
 /* Кнопка навигации и главный заголовок конец */
 
 /*Секция Biography используем flex начало*/
-.wrapper-biography {
+/*.wrapper-biography {
     max-width: 1175px;
     max-height: 840px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .biography {
@@ -265,7 +265,7 @@ h1 {
     position: relative;
     order: 5;
     width: 38.213%;
-}
+}*/
 /*Секция Biography используем flex конец*/
 
 /*Секция Testimonials используем grid начало*/
