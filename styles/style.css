@@ -59,12 +59,6 @@
     font-style: normal;
 }
 
-body {
-    min-height: 100vh;
-    line-height: 1.2;
-    box-sizing: border-box;
-}
-
 h1, .subtitle-biography, .title-strengst {
     font-family: 'PlayfairDisplay', 'Times New Roman', Times, serif;
 }
@@ -77,37 +71,46 @@ h2, .description-biography, .list-skills, h3, .list-designer-description, .link-
 .text-biography, .text-testimonials, .list-strengts {
     font-family: 'Bitter', 'Times New Roman', Times, serif;
 }
+/* Блок по методологии БЭМ */
+.body {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    min-height: 100vh;
+}
 
 /* Кнопка навигации и главный заголовок начало */
-.wrapper-nav {
+.header {
     max-width: 1065px;
-    max-height: 135px;
+    height: 630px;
+}
+
+.body__header {
     margin: 0 auto;
-    background-color: #ffffff;
 }
 
-nav {
-    background-color: #ffffff;
+
+.dropdown {
+    max-width: 1065px;
+    height: 135px;
 }
 
-.header-dropdown {
+.header__dropdown {
     position: relative;
     display: block;
+    margin: 0 auto;
 }
 
-.header-menu-button {
-    background-color: #ffffff;
-    border: none;
+.dropdown__button {
     padding: 1rem;
     margin: 5.5% 48%;
 }
 
-.item-menu {
-    display: inline-block;
-    list-style: none;
+.button {
+    background-color: #ffffff;
+    border: none;
 }
 
-.dropdown-content {
+.dropdown__menu {
     display: none;
     position: absolute;
     z-index: 1;
@@ -115,6 +118,9 @@ nav {
     height: 105%;
     top: 75%;
     left: 0;
+}
+
+.menu {
     /*Добавление эффекта  glassmorphism для выпадающего меню*/
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -122,43 +128,46 @@ nav {
     -webkit-backdrop-filter: blur( 5px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-
 }
 
-.item-menu-link {
+.menu__item {
+    display: inline-block;
+    list-style: none;
+}
+
+.menu__link {
     display: block;
     font-family: 'Butler', 'Times New Roman', Times, serif;
     font-size: 2.75rem;
     font-weight: 400;
-    color: #000000;
     padding: 2.5rem .9rem;
     text-decoration: none;
 }
 
-.item-menu-link:hover {
+.menu__link-active {
+    color: #000000;
+}
+
+.menu__link:hover {
     background-color: #a52a2a10;
 }
 
-.header-dropdown:hover .dropdown-content {
+.dropdown:hover .menu {
     display: block;
 }
 
-.wrapper-header {
-    max-width: 1065px;
-    height: 630px;
+.block__header {
+    position: relative;
     margin: 0 auto;
-
 }
 
-.hero {
-    position: relative;
-    background-color: beige;
+.block {
+    background-color: #f5f5dc;
     background-image: url(../images/bg-header.jpg);
-    margin: 0 auto;
     height: 100%;
 }
 
-.hero-box {
+.block__box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -169,7 +178,7 @@ nav {
     text-align: center;
 }
 
-h1 {
+.block__title-hero {
     font-weight: 500;
     font-size: 5.375em;
     text-align: center;
@@ -178,7 +187,7 @@ h1 {
     margin-left: 1.033%;
 }
 
-.description-hero {
+.block__description-hero {
     font-weight: 500;
     font-size: 1.25em;
     text-align: center;
