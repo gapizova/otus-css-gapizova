@@ -67,6 +67,7 @@ body {
     min-height: 100vh;
     line-height: 1.2;
     box-sizing: border-box;
+    background-color: #ffffff;
 }
 
 h1, .subtitle-biography, .title-strengst {
@@ -84,27 +85,91 @@ h2, .description-biography, .list-skills, h3, .list-designer-description, .link-
 
 /* Кнопка навигации и главный заголовок начало */
 .wrapper-nav {
-    width: 100%;
-    height: 135px;
-    margin: 0 auto;
+    max-width: 1065px;
+    max-height: 135px;
 }
-nav {
-    background-color: white;
+
+.header-dropdown {
+    position: relative;
+    display: block;
 }
 
 .header-menu-button {
-    background-color: white;
+    background-color: #ffffff;
     border: none;
-    margin-top: 5.5%;
-    margin-bottom: 5.5%;
-    margin-left: 48.819%;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 5.5% 0;
+
+    transition: background-color .3s ease;
+
+    &:hover {
+        background-color: #a52a2a10;
+    }
+}
+
+.item-menu {
+    display: inline-block;
+    list-style: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 96.5%;
+    height: 105%;
+    top: 75%;
+    left: 0;
+    /*Добавление эффекта  glassmorphism для выпадающего меню*/
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
+
+.item-menu-link {
+    position: relative;
+    display: block;
+    font-family: 'Butler', 'Times New Roman', Times, serif;
+    font-size: 2.75rem;
+    font-weight: 400;
+    color: #000000;
+    padding: 2.5rem .9rem .1rem;
+    text-decoration: none;
+
+    &::before {
+        content: '';
+	    position: absolute;
+	    left: 0;
+        bottom: -5px;
+	    width: 0;
+	    height: 1.5px;
+	    background-color: #000000;
+
+        transition: width .3s ease;
+    }
+
+    &:hover:before {
+        width: 100%;
+    }
+}
+
+.header-dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .wrapper-header {
     max-width: 1065px;
     height: 630px;
     margin: 0 auto;
+}
 
+.header {
+    text-align: center;
 }
 
 .hero {
