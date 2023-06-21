@@ -59,6 +59,10 @@
     font-style: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     min-height: 100vh;
     line-height: 1.2;
@@ -83,7 +87,6 @@ h2, .description-biography, .list-skills, h3, .list-designer-description, .link-
 .wrapper-nav {
     max-width: 1065px;
     max-height: 135px;
-    margin: 0 auto;
 }
 
 .header-dropdown {
@@ -94,8 +97,15 @@ h2, .description-biography, .list-skills, h3, .list-designer-description, .link-
 .header-menu-button {
     background-color: #ffffff;
     border: none;
+    border-radius: 8px;
     padding: 1rem;
-    margin: 5.5% 48%;
+    margin: 5.5% 0;
+
+    transition: background-color .3s ease;
+
+    &:hover {
+        background-color: #a52a2a10;
+    }
 }
 
 .item-menu {
@@ -122,17 +132,30 @@ h2, .description-biography, .list-skills, h3, .list-designer-description, .link-
 }
 
 .item-menu-link {
+    position: relative;
     display: block;
     font-family: 'Butler', 'Times New Roman', Times, serif;
     font-size: 2.75rem;
     font-weight: 400;
     color: #000000;
-    padding: 2.5rem .9rem;
+    padding: 2.5rem .9rem .1rem;
     text-decoration: none;
-}
 
-.item-menu-link:hover {
-    background-color: #a52a2a10;
+    &::before {
+        content: '';
+	    position: absolute;
+	    left: 0;
+        bottom: -5px;
+	    width: 0;
+	    height: 1.5px;
+	    background-color: #000000;
+
+        transition: width .3s ease;
+    }
+
+    &:hover:before {
+        width: 100%;
+    }
 }
 
 .header-dropdown:hover .dropdown-content {
@@ -143,7 +166,10 @@ h2, .description-biography, .list-skills, h3, .list-designer-description, .link-
     max-width: 1065px;
     height: 630px;
     margin: 0 auto;
+}
 
+.header {
+    text-align: center;
 }
 
 .hero {
