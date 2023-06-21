@@ -144,7 +144,7 @@ h2, .description-biography, .list-skills, h3, .list-designer-description, .link-
     text-decoration: none;
 }
 
-.menu__link-active {
+.menu__link_active {
     color: #000000;
 }
 
@@ -156,18 +156,18 @@ h2, .description-biography, .list-skills, h3, .list-designer-description, .link-
     display: block;
 }
 
-.block__header {
+.block-hero__header {
     position: relative;
     margin: 0 auto;
 }
 
-.block {
+.block-hero {
     background-color: #f5f5dc;
     background-image: url(../images/bg-header.jpg);
     height: 100%;
 }
 
-.block__box {
+.block-hero__box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -178,7 +178,7 @@ h2, .description-biography, .list-skills, h3, .list-designer-description, .link-
     text-align: center;
 }
 
-.block__title-hero {
+.block-hero__title-hero {
     font-weight: 500;
     font-size: 5.375em;
     text-align: center;
@@ -187,7 +187,7 @@ h2, .description-biography, .list-skills, h3, .list-designer-description, .link-
     margin-left: 1.033%;
 }
 
-.block__description-hero {
+.block-hero__description-hero {
     font-weight: 500;
     font-size: 1.25em;
     text-align: center;
