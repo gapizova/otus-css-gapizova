@@ -410,7 +410,7 @@ h3 {
     font-size: 1em;
 }
 /*Секция Designers начало*/
-.wrapper-designers {
+/*.wrapper-designers {
     max-width: 1337px;
     margin: 16.5% auto 0 auto;
     overflow-x: auto;
@@ -482,7 +482,7 @@ h3 {
 
 .item-list-designer:first-child::after {
     content: '';
-}
+}*/
 /*Секция Designers конец*/
 
 .capitalize {
