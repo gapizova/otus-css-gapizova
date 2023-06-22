@@ -174,7 +174,7 @@ h2, .description-biography, .list-skills, h3, .list-designer-description, .link-
 
 .hero {
     position: relative;
-    background-color: beige;
+    background-color: #f5f5dc;
     background-image: url(../images/bg-header.jpg);
     margin: 0 auto;
     height: 100%;
@@ -185,7 +185,7 @@ h2, .description-biography, .list-skills, h3, .list-designer-description, .link-
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
+    background-color: #ffffff;
     width: 56.338%;
     height: 57.143%;
     text-align: center;
@@ -310,7 +310,7 @@ h1 {
     display: block;
     width: 14px;
     height: 4px;
-    background-color: black;
+    background-color: #000000;
 }
 
 .text-biography {
@@ -355,7 +355,7 @@ h1 {
 
 .link-testimonials {
     text-decoration: none;
-    color: black;
+    color: #000000;
     position: relative;
     display: inline-block;
     transition: all .3s linear;
@@ -394,6 +394,7 @@ h1 {
     &:active {
         color: #a52a2a;
     }
+
 }
 
 .link-testimonials, .capitalize {
