@@ -184,6 +184,28 @@ h1 {
 }
 /* Кнопка навигации и главный заголовок конец */
 
+.mt {
+    margin-top: 15%!important;
+}
+
+.rotate {
+    transform: rotate(-90deg) translate(140%, -140%)!important;
+}
+
+.font-subtitle-biography {
+    font-family: 'PlayfairDisplay'!important;font-size: 86px!important;
+}
+
+.font-description {
+    font-family:'Roboto'!important;
+    font-size:  18px!important;
+}
+
+.font-blockquote {
+    font-family: 'Bitter'!important;
+    font-size: 26px!important;
+}
+
 /*Секция Biography используем flex начало*/
 /*.wrapper-biography {
     max-width: 1175px;
