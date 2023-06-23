@@ -70,10 +70,10 @@ body {
     background-color: #ffffff;
 }
 
-h1, .subtitle-biography, .title-strengst {
+/* Настройки шрифтов начало*/
+.title-hero, .subtitle-biography, .title-strengst {
     font-family: 'PlayfairDisplay', 'Times New Roman', Times, serif;
 }
-
 
 h2, .description-biography, .list-skills, h3, .list-designer-description, .link-testimonials, .description-hero {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -82,6 +82,53 @@ h2, .description-biography, .list-skills, h3, .list-designer-description, .link-
 .text-biography, .text-testimonials, .list-strengts {
     font-family: 'Bitter', 'Times New Roman', Times, serif;
 }
+
+h2 {
+    font-weight: 700;
+    font-size: 1.25em;
+}
+
+.subtitle-biography, .title-strengst {
+    font-weight: 500;
+    font-size: 5.375em;
+    margin: 0;
+}
+
+.description-biography, .list-skills {
+    font-weight: 500;
+    font-size: 1.125em;
+}
+
+.text-biography {
+    font-weight: 400;
+    font-size: 1.625em;
+    margin: 0;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.link-testimonials {
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.text-testimonials {
+    font-weight: 400;
+    font-size: 2em;
+    text-align: center;
+}
+/* Настройки шрифтов конец*/
 
 /* Кнопка навигации и главный заголовок начало */
 .wrapper-nav {
@@ -99,7 +146,7 @@ h2, .description-biography, .list-skills, h3, .list-designer-description, .link-
     border: none;
     border-radius: 8px;
     padding: 1rem;
-    margin: 5.5% 0;
+    margin: 4% 0;
 
     transition: background-color .3s ease;
 
@@ -176,6 +223,8 @@ h2, .description-biography, .list-skills, h3, .list-designer-description, .link-
     position: relative;
     background-color: #f5f5dc;
     background-image: url(../images/bg-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0 auto;
     height: 100%;
 }
@@ -191,7 +240,7 @@ h2, .description-biography, .list-skills, h3, .list-designer-description, .link-
     text-align: center;
 }
 
-h1 {
+.title-hero {
     font-weight: 500;
     font-size: 5.375em;
     text-align: center;
@@ -246,10 +295,11 @@ h1 {
 }
 
 .image-biography {
+    max-width: 100%;
+    height: auto;
     order: 0;
-    flex-basis: 100%;
     width: 47.064%;
-    margin-top: 7.6%;
+    margin-top: 10%;
     overflow: hidden;
     transition: transform 0.25s;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -262,17 +312,16 @@ h1 {
 
 .title-biography {
     display: inline-block;
-    transform: rotate(-90deg) translate(0, -115px);
+    transform: rotate(-90deg) translate(-7.5rem, -6.8rem);
     order: 1;
     width: 1.957%;
-    margin-top: 13.6%;
 }
 
 .subtitle-biography {
     order: 2;
     line-height: 1.333;
     width: 40.426%;
-    padding-top: 3%;
+    padding-top: 10rem;
 }
 
 .description-biography {
@@ -320,6 +369,94 @@ h1 {
 }
 /*Секция Biography используем flex конец*/
 
+/*Секция Designers начало*/
+.wrapper-designers {
+    max-width: 1337px;
+    margin: 11.6% auto 0 auto;
+    overflow-x: auto;
+}
+
+.designers {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(320px, 1fr));
+    grid-template-rows: 15% 85%;
+    grid-auto-columns: 320px;
+    column-gap: 25px;
+}
+
+.title-designers {
+    display: inline-block;
+    transform: rotate(-90deg) translate(43.5%, 0);
+    grid-row: 1;
+    grid-column: 3 / 5;
+}
+
+.container-designer {
+    display: flex;
+    row-gap: 23.5px;
+    flex-direction: column;
+    grid-row: 2 / 3;
+    grid-column: span 1;
+}
+
+.image-designer {
+    max-width: 100%;
+    object-fit: contain;
+    width: fit-content;
+    overflow: hidden;
+
+    transition: transform 0.25s;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+}
+
+.image-designer-stretched {
+    max-width: 100%;
+    grid-row: 1 / 3;
+    grid-column: span 2;
+    margin-left: 2%;
+}
+
+.image-designer-stretched > .designer-description {
+    max-width: 100%;
+    align-self: center;
+    margin-left: 36.5%;
+}
+
+.subtitle-designers {
+    margin: 0;
+    padding: 0;
+}
+
+.list-designer-description {
+    font-weight: 400;
+    font-size: 1em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+ }
+
+.item-list-designer {
+    display: inline-block;
+}
+
+.item-list-designer::after {
+    content: ' / ';
+}
+
+.item-list-designer:last-child::after {
+    content: '';
+}
+
+.item-list-designer:first-child::after {
+    content: '';
+}
+/*Секция Designers конец*/
+
 /*Секция Testimonials используем grid начало*/
 .wrapper-testimonials {
     max-width: 1179px;
@@ -327,8 +464,8 @@ h1 {
 }
 
 .testimonials {
-    margin-top: 14.917%;
-    margin-left: 11.2%;
+    margin: 5.8% auto auto 17%;
+    padding: 1rem;
 }
 
 .grid-column-1 {
@@ -417,6 +554,7 @@ h1 {
 }
 
 .image-testimonials-1 {
+    max-width: 100%;
     grid-area: 2 / 2 / 5 / 4;
     object-fit: cover;
     margin-top: -1.2rem;
@@ -441,6 +579,7 @@ h1 {
 }
 
 .image-testimonials-2 {
+    max-width: 100%;
     grid-row: 2 / 3;
     justify-self: center;
     margin-top: -2.5%;
@@ -448,139 +587,10 @@ h1 {
 }
 /*Секция Testimonials используем grid конец*/
 
-h2 {
-    font-weight: 700;
-    font-size: 1.25em;
-}
-
-.subtitle-biography, .title-strengst {
-    font-weight: 500;
-    font-size: 5.375em;
-    margin: 0;
-}
-
-.description-biography, .list-skills {
-    font-weight: 500;
-    font-size: 1.125em;
-}
-
-.text-biography {
-    font-weight: 400;
-    font-size: 1.625em;
-    margin: 0;
-}
-
-h3 {
-    font-weight: 700;
-    font-size: 1em;
-}
-/*Секция Designers начало*/
-.wrapper-designers {
-    max-width: 1337px;
-    margin: 16.5% auto 0 auto;
-    overflow-x: auto;
-}
-
-.designers {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(320px, 1fr));
-    grid-template-rows: 15% 85%;
-    grid-auto-columns: 320px;
-    column-gap: 25px;
-}
-
-.title-designers {
-    display: inline-block;
-    transform: rotate(-90deg) translate(43.5%, 0);
-    grid-row: 1;
-    grid-column: 3 / 5;
-}
-
-.container-designer {
-    display: flex;
-    row-gap: 23.5px;
-    flex-direction: column;
-    grid-row: 2 / 3;
-    grid-column: span 1;
-}
-
-.image-designer {
-    object-fit: contain;
-    width: fit-content;
-    overflow: hidden;
-
-    transition: transform 0.25s;
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-
-    &:hover {
-        transform: scale(1.1);
-        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-    }
-}
-
-.image-designer-stretched {
-    grid-row: 1 / 3;
-    grid-column: span 2;
-    margin-left: 2%;
-}
-
-.image-designer-stretched > .designer-description {
-    align-self: center;
-    margin-left: 36.5%;
-}
-
-.subtitle-designers {
-    margin: 0;
-    padding: 0;
-}
-
-.list-designer-description {
-    font-weight: 400;
-    font-size: 1em;
-    list-style: none;
-    margin: 0;
-    padding: 0;
- }
-
-.item-list-designer {
-    display: inline-block;
-}
-
-.item-list-designer::after {
-    content: ' / ';
-}
-
-.item-list-designer:last-child::after {
-    content: '';
-}
-
-.item-list-designer:first-child::after {
-    content: '';
-}
-/*Секция Designers конец*/
-
-.capitalize {
-    text-transform: capitalize;
-}
-
-.uppercase {
-    text-transform: uppercase;
-}
-
-.link-testimonials {
-    font-weight: 400;
-    font-size: 1em;
- }
-
-.text-testimonials {
-    font-weight: 400;
-    font-size: 2em;
-    text-align: center;
- }
 /* Секция Strong points с учетом поддержки разных браузеров начало */
 .wrapper-strong-points {
     max-width: 1440px;
-    margin: 9% auto 0 auto;
+    margin: 8.2% auto 0 auto;
     overflow-x: auto;
 }
 
@@ -601,13 +611,15 @@ h3 {
 }
 
 .image-strong-points {
+    max-width: 100%;
     object-fit: cover;
+    align-self: flex-end;
 }
 
 .container-list {
     display: flex;
     flex-direction: column;
-    align-self: start;
+    margin-top: -3.6rem;
 }
 
 .list-strengts {
