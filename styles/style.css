@@ -668,8 +668,8 @@ h3 {
  }
 /* Секция Strong points с учетом поддержки разных браузеров конец */
 
-/* Breakpoints 1300px начало*/
-/*@media screen and (max-width: 1300px){
+/* Breakpoints 1100px начало*/
+@media screen and (max-width: 1100px){
     .biography {
         margin: 15.5% 5% 0 5%;
         padding: .1rem;
@@ -687,10 +687,10 @@ h3 {
         margin: 5.8% auto ;
     }
 }
-/* Breakpoints 1300px конец*/
+/* Breakpoints 1100px конец*/
 
-/*Breakpoints 975px начало*/
-/*@media screen and (max-width: 1000px) {
+/*Breakpoints 1024px начало*/
+@media screen and (max-width: 1024px) {
     html {
         font-size: 14px;
     }
@@ -705,6 +705,12 @@ h3 {
 
     .title-biography {
         transform: rotate(-90deg) translate(-7.5rem, -.2rem);
+    }
+
+    .image-biography {
+        width: 60%;
+        overflow: hidden;
+        margin-right: 5%;
     }
 
     .designers {
@@ -724,7 +730,7 @@ h3 {
     }
 
     .title-strong-points {
-        transform: rotate(-90deg) translate(-15%, 1450%);
+        transform: rotate(-90deg) translate(-15%, 1400%);
     }
 
     .container-list {
@@ -735,17 +741,17 @@ h3 {
         margin-left: 20%;
     }
 }
-/*Breakpoints 975px конец*/
+/*Breakpoints 1024px конец*/
 
-/*Для экранов от 840 и до 600 начало*/
-/*@media screen and (max-width: 840.99px) and (min-width: 600.99px){
+/*Breakpoints 840px начало*/
+@media screen and (max-width: 840px){
     body {
         padding-bottom: 4rem;
     }
     
     .header-dropdown {
         position: fixed;
-        bottom: -5%;
+        bottom: -3.2%;
         left: 0;
         z-index: 10000;
         width: 100%;
@@ -789,13 +795,13 @@ h3 {
         left: 0;
         transform: translate(0, 0);
         width: 100%;
-        max-height: 450px;
+        max-height: 420px;
     }
     
     .title-hero {
         font-weight: 400;
         font-size: 4.375rem;
-        margin-top: 25.8%;
+        margin-top: 20%;
     }
     
     .description-hero {
@@ -804,10 +810,10 @@ h3 {
     }
     
     /* Секция биография */
-    /*.wrapper-biography {
+    .wrapper-biography {
         padding: 0 .4rem;
-        margin: 68.5% auto;
-        max-width: 450px;
+        margin: 48% auto;
+        max-width: 640px;
         max-height: 952px;
     }
     
@@ -820,11 +826,11 @@ h3 {
     .subtitle-biography {
         position: relative;
         order: 4;
-        width: 100%;
+        width: 70%;
         font-size: 3.85rem;
         line-height: 1.333;
         padding: 0 0 0 .9rem;
-        margin: 13% 0 0 3.8%;
+        margin: 5% auto 0 auto;
     }
     
     .subtitle-biography::before {
@@ -870,12 +876,12 @@ h3 {
     
     .image-biography {
         order: 5;
-        width: 100%;
+        width: 70%;
         padding: 0;
-        margin: 2rem 0 0 -1rem;
+        margin: 2.5rem auto;
         transition: none;
         box-shadow: none;
-        object-fit: contain;
+        object-fit: cover;
     }
     
     .image-biography:hover {
@@ -890,13 +896,13 @@ h3 {
     .text-biography {
         order: 3;
         font-size: 1.875rem;
-        width: 100%;
-        margin-top: 7.8%;
+        width: 70%;
+        margin: 7.8% auto 0 auto;
         padding: 0;
     }
     
     /* Секция дизайнеры */
-    /*.wrapper-designers {
+    .wrapper-designers {
         margin: -40% 0;
         padding: 0 .2rem;
     }
@@ -918,11 +924,10 @@ h3 {
     }
     
     .container-designer {
-        margin: 4% 0;
+        margin: 1% 0;
     }
     
     .image-designer {
-        overflow: hidden;
         transition: none;
         box-shadow: none;
     }
@@ -942,8 +947,14 @@ h3 {
     }
     
     /* Секция Testimonials*/
-    /*.testimonials {
+    .wrapper-testimonials {
+        max-width: 900px;
+        max-height: 1000px;
+    }
+
+    .testimonials {
         margin: 50% 0 0 0;
+        padding: 0;
     }
     
     .grid-column-1 {
@@ -970,23 +981,23 @@ h3 {
     }
     
     .grid-row-1 {
-        width: 49%;
-        margin: 5.6% 0 0 -2%;
-        padding: 0;
+        width: 30%;
+        margin: 1% 0 0 1%;
+        padding: 1rem;
         order: 3;
     }
     
     .grid-row-2 {
-        width: 49%;
-        margin: 5.6% 0 0 0;
-        padding: 0 0 0 1.4rem;
+        width: 30%;
+        margin: 1% 0 0 1%;
+        padding: 1rem;
         order: 4;
     }
     
     .grid-row-3 {
-        width: 49%;
-        margin: 5.6% 0 0 -2%;
-        padding: 0;
+        width: 30%;
+        margin: 1% 0 0 1%;
+        padding: 1rem;
         order: 5;
     }
     
@@ -1012,33 +1023,38 @@ h3 {
     .text-testimonials {
         height: 25.25%;
         order: 1;
-        width: 89%;
+        width: 70%;
         font-size: 1.875rem;
         margin: 5.6% auto;
         padding: 0 0 0 .5rem;
     }
     
     /* Секция Strong points*/
-    /*.wrapper-strong-points {
+    .wrapper-strong-points {
         margin: 4.6% auto;
         padding: .1rem;
     }
     
     .strong-points {
         height: 110%;
+        gap: 0;
     }
     
     .title-strong-points {
         display: block;
-        width: 50%;
+        width: 30%;
         font-size: 1.125rem;
-        transform: rotate(0) translate(19.2rem, 1.6rem);
+        transform: rotate(0) translate(30rem, 1.6rem);
     }
     
     .container-list {
         order: 0;
-        margin: 0 0 0 -.2rem;
-        width: 165%;
+        margin: 0 0 0 .5rem;
+        width: 80%;
+    }
+
+    .container-list ~ .image-strong-points {
+        margin-left: 0;
     }
     
     .title-strengst {
@@ -1066,12 +1082,11 @@ h3 {
     
     .image-strong-points {
         order: 1;
-        padding: .1rem;
-        margin: 7rem 0 0 3rem;
+        padding: 0;
+        margin: 7rem 0 0 0;
         object-fit: contain;
         width: 300px;
         height: 450px;
-        overflow: hidden;
     }
     
     @supports (display: grid){
@@ -1080,10 +1095,10 @@ h3 {
         }
     }
 }
-/*Для экранов от 840 и до 600 начало*/
+/*Breakpoints 840px конец*/
 
-/* Мобильная версия от 450 и меньше начало */
-/*@media screen and (max-width: 451px){
+/* Breakpoints 450px начало */
+@media screen and (max-width: 450px){
     body {
         padding-bottom: 4rem;
     }
@@ -1149,7 +1164,7 @@ h3 {
     }
 
     /* Секция биография */
-    /*.wrapper-biography {
+    .wrapper-biography {
         padding: 0 .4rem;
         margin: 68.5% auto;
         max-width: 450px;
@@ -1242,7 +1257,7 @@ h3 {
     }
 
     /* Секция дизайнеры */
-    /*.wrapper-designers {
+    .wrapper-designers {
         margin: -40% 0;
         padding: 0 .2rem;
     }
@@ -1268,7 +1283,6 @@ h3 {
     }
 
     .image-designer {
-        overflow: hidden;
         transition: none;
         box-shadow: none;
     }
@@ -1288,7 +1302,7 @@ h3 {
     }
 
     /* Секция Testimonials*/
-    /*.testimonials {
+    .testimonials {
         margin: 50% 0 0 0;
     }
 
@@ -1317,7 +1331,7 @@ h3 {
 
     .grid-row-1 {
         width: 49%;
-        margin: 5.6% 0 0 -2%;
+        margin: 5.6% 0 0 0;
         padding: 0;
         order: 3;
     }
@@ -1331,7 +1345,7 @@ h3 {
 
     .grid-row-3 {
         width: 49%;
-        margin: 5.6% 0 0 -2%;
+        margin: 5.6% 0 0 0;
         padding: 0;
         order: 5;
     }
@@ -1365,7 +1379,7 @@ h3 {
     }
 
     /* Секция Strong points*/
-    /*.wrapper-strong-points {
+    .wrapper-strong-points {
         margin: 4.6% auto;
         padding: .1rem;
     }
@@ -1384,7 +1398,7 @@ h3 {
     .container-list {
         order: 0;
         margin: 0 0 0 -.2rem;
-        width: 165%;
+        width: 150%;
     }
 
     .title-strengst {
@@ -1413,7 +1427,7 @@ h3 {
     .image-strong-points {
         order: 1;
         padding: .1rem;
-        margin: 7rem 0 0 3rem;
+        margin: 10rem 0 0 3rem;
         object-fit: contain;
         width: 300px;
         height: 450px;
@@ -1425,6 +1439,5 @@ h3 {
             grid-template-columns: 40% repeat(3, minmax(300px, 1fr));
         }
     }
-
 }
-/* Мобильная версия от 450 и меньше конец */
+/* Breakpoints 450px конец */
