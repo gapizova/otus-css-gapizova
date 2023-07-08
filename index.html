@@ -9,21 +9,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
     <title>Mod Studio</title>
+    <link rel="icon" href="/favicon.ico" sizes="any"><!-- 32×32 -->
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png"><!-- 180×180 -->
+    <link rel="manifest" href="/manifest.json">
 </head>
 
 <body>
     <header class="header wrapper-header">
         <!-- Блок меню -->
         <nav class="header-dropdown wrapper-nav">
-            <button type="button" class="header-menu-button"><img src="/images/Menu.svg" alt="Меню"></button>
-                <ul class="dropdown-content">
-                    <li class="item-menu"><a href="#part-biography" class="item-menu-link">Biography</a></li>
-                    <li class="item-menu"><a href="#part-designers" class="item-menu-link">Designers</a></li>
-                    <li class="item-menu"><a href="#part-testimonials" class="item-menu-link">Testimonials</a></li>
-                    <li class="item-menu"><a href="#part-strong-points" class="item-menu-link">Strong Points</a></li>
-                </ul>
+            <input type="checkbox" id="menu" class="header-menu-button">
+            <label for="menu"><img src="/images/Menu.svg" alt="Меню"></label>
+            <ul class="dropdown-content">
+                <li class="item-menu"><a href="#part-biography" class="item-menu-link">B</a></li>
+                <li class="item-menu"><a href="#part-designers" class="item-menu-link">D</a></li>
+                <li class="item-menu"><a href="#part-testimonials" class="item-menu-link">T</a></li>
+                <li class="item-menu"><a href="#part-strong-points" class="item-menu-link">S</a></li>
+            </ul>
         </nav>
-        <section class="hero">
+        <section class="hero wrapper-hero">
             <div class="hero-box">
                 <!-- Главный заголовок -->
                 <h1 class="title-hero">Mod Studio</h1>
@@ -35,8 +40,11 @@
     <main>
         <section id="part-biography" class="biography wrapper-biography">
             <h2 class="title-biography">Biography</h2>
-            <img class="image-biography" src="/images/katay-mills.jpg" alt="Katay Mills">
-            <p class="subtitle-biography">Katya <br>Mills</p>
+            <picture class="image-biography">
+                <source media="(max-width: 768px)" srcset="/images/katay-mills/katay-mills-mobail@1x.jpg">
+                <img src="/images/katay-mills/katay-mills@1x.jpg" alt="Photo Katay Mills">
+            </picture>
+            <p class="subtitle-biography">Katya Mills</p>
             <p class="description-biography">Art Director</p>
             <ul class="list-skills">
                 <li class="skill">Scenography</li>
@@ -45,14 +53,19 @@
                 <li class="skill">Design</li>
             </ul>
             <blockquote class="text-biography">
-                “The more I deal with the work<br>as something that is my own,<br>as something that is personal,<br>the more successful it is.“
+                “The more I deal&nbsp;with the&nbsp;work as&nbsp;something that is my own,<br> as something that is&nbsp;personal, the&nbsp;more successful it is.“
             </blockquote>
         </section>
         <!-- Блок с описанием дизайнеров -->
         <section id="part-designers" class="designers wrapper-designers">
             <h2 class="title-designers">Designers</h2>
             <div class="container-designer image-designer-stretched">
-                <img class="image-designer" src="/images/jess-wonder.jpg" alt="Jess Wonder">
+                <picture class="image-designer">
+                    <source 
+                            media="(max-width: 768px)"
+                            srcset="/images/jess-wonder/jess-wonder-mobail@1x.jpg">
+                    <img src="/images/jess-wonder/jess-wonder@1x.jpg" alt="Photo Jess Wonder">
+                </picture>
                 <div class="designer-description">
                     <h3 class="uppercase subtitle-designers">Jess Wonder</h3>
                     <ul class="list-designer-description">
@@ -71,7 +84,9 @@
                 </div>
             </div>
             <div class="container-designer">
-                <img class="image-designer" src="/images/kameron-clein.jpg" alt="Kameron Clein">
+                <picture class="image-designer">
+                    <img src="/images/kameron-clein/kameron-clein@1x.jpg" alt="Photo Kameron Clein">
+                </picture>
                 <div class="designer-description">
                     <h3 class="uppercase subtitle-designers">Kameron Clein</h3>
                     <ul class="list-designer-description">
@@ -90,7 +105,9 @@
                 </div>
             </div>
             <div class="container-designer">
-                <img class="image-designer" src="/images/louisse-red.jpg" alt="LOUISSE RED">
+                <picture class="image-designer">
+                    <img src="/images/louisse-red/louisse-red@1x.jpg" alt="Photo LOUISSE RED">
+                </picture>
                 <div class="designer-description">
                     <h3 class="uppercase subtitle-designers">LOUISSE RED</h3>
                     <ul class="list-designer-description">
@@ -125,13 +142,23 @@
                     <h3 class="capitalize">Creativity</h3>
                     <a class="link-testimonials" href="http://www.whitepapers.com" rel="noopener noreferrer" target="_blank">www.whitepapers.com</a>  
                 </div>            
-                <img class="image-testimonials-1" src="/images/image-testimonials1.jpg" alt="Testimonials">
-            
+                <picture class="image-testimonials-1">
+                    <source 
+                            media="(max-width: 768px)"
+                            srcset="/images/image-testimonials1/image-testimonials1@0.75x.jpg">
+                    <img src="/images/image-testimonials1/image-testimonials1@1x.jpg" alt="Testimonials">
+                </picture>
+
                 <div class="grid-column-2">
                     <blockquote class="text-testimonials">
-                        I just really <wbr> want to do <wbr> good work <wbr> and work with <wbr> some great <wbr> people, people <wbr> who challenge <wbr> me.
+                        I&nbsp;just&nbsp;really want&nbsp;to&nbsp;do good&nbsp;work and&nbsp;work<wbr> with some&nbsp;great people,<wbr> people who&nbsp;challenge <br>me.
                     </blockquote>
-                    <img class="image-testimonials-2" src="/images/image-testimonials2.jpg" alt="Testimonials">
+                    <picture class="image-testimonials-2">
+                        <source 
+                                media="(max-width: 768px)"
+                                srcset="/images/image-testimonials2/image-testimonials2-mobail@1x.jpg">
+                        <img src="/images/image-testimonials2/image-testimonials2@1x.jpg" alt="Testimonials">
+                    </picture>
                 </div>
             </div>
         </section>
@@ -139,8 +166,18 @@
         <section id="part-strong-points" class="wrapper-strong-points">
             <h2 class="title-strong-points">Strong points</h2>
             <div class="strong-points">
-                <img class="image-strong-points" src="/images/image-strong-points1.jpg" alt="Strong Points">
-                <img class="image-strong-points" src="/images/image-strong-points2-full.jpg" alt="Strong Points">
+                <picture class="image-strong-points">
+                    <source 
+                            media="(max-width: 768px)"
+                            srcset="/images/image-strong-points1/image-strong-points1@0.75x.jpg">
+                    <img src="/images/image-strong-points1/image-strong-points1@1x.jpg" alt="Strong Points">
+                </picture>
+                <picture class="image-strong-points">
+                    <source 
+                            media="(max-width: 768px)"
+                            srcset="/images/image-strong-points2/image-strong-points2@0.75x.jpg">
+                    <img src="/images/image-strong-points2/image-strong-points2@1x.jpg" alt="Strong Points">
+                </picture>
                 <div class="container-list">
                     <p class="title-strengst">Strengths</p>
                     <ul class="list-strengts">
@@ -158,7 +195,12 @@
                         <li class="item-list-strengts">Creativity</li>
                     </ul>
                 </div>
-                <img class="image-strong-points" src="/images/image-strong-points2-full.jpg" alt="Strong Points">
+                <picture class="image-strong-points">
+                    <source 
+                            media="(max-width: 768px)"
+                            srcset="/images/image-strong-points2/image-strong-points2@0.75x.jpg">
+                    <img src="/images/image-strong-points2/image-strong-points2@1x.jpg" alt="Strong Points">
+                </picture>
             </div> 
         </section>
     </main>
