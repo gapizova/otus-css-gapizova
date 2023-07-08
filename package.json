@@ -8,6 +8,7 @@
     "@babel/preset-env": "^7.22.5",
     "ansi-styles": "^4.3.0",
     "async": "^2.6.4",
+    "at-rule-packer": "^0.4.1",
     "babel-loader": "^9.1.2",
     "basic-auth": "^2.0.1",
     "call-bind": "^1.0.2",
@@ -32,6 +33,7 @@
     "http-proxy": "^1.18.1",
     "http-server": "^14.1.1",
     "iconv-lite": "^0.6.3",
+    "image-webpack-loader": "^8.1.0",
     "lodash": "^4.17.21",
     "mime": "^1.6.0",
     "minimist": "^1.2.8",
@@ -40,6 +42,9 @@
     "object-inspect": "^1.12.3",
     "opener": "^1.5.2",
     "portfinder": "^1.0.32",
+    "postcss": "^8.4.25",
+    "postcss-loader": "^7.3.3",
+    "postcss-preset-env": "^9.0.0",
     "prettier": "^2.8.8",
     "qs": "^6.11.2",
     "requires-port": "^1.0.0",
@@ -70,5 +75,9 @@
   "bugs": {
     "url": "https://github.com/gapizova/otus-css-gapizova/issues"
   },
-  "homepage": "https://github.com/gapizova/otus-css-gapizova#readme"
+  "homepage": "https://github.com/gapizova/otus-css-gapizova#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "browserslist": "^4.21.9"
+  }
 }
